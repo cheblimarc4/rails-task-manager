@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+h1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h3,h4{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li{
+  display: block;
+  padding: 10px;
+}
+.btn.btn-primary{
+  margin-left: 40px;
+}

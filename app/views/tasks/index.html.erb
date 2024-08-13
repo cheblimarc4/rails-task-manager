@@ -1,0 +1,15 @@
+<h1>My Tasks</h1>
+<div class="tasks">
+  <ul>
+    <% @tasks.each_with_index do |task,index| %>
+      <li>
+        <%= (index+1 ) %>
+        <%= link_to task.title, task_path(task) %>
+        <%= link_to task_path(task), data: { turbo_confirm: "Are you sure?", turbo_method: :delete }, class: 'delete-task-link' do %>
+          <i class="fa-solid fa-trash fa-xl"></i>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+  <%= link_to "Add a new Task", new_task_path, class:"btn btn-primary" %>
+</div>
